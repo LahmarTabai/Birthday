@@ -1,0 +1,84 @@
+/* thème */
+html {
+background: #222 url(../asset/snow.jpg)no-repeat fixed center center /cover;
+    overflow-x: hidden;
+}
+header{
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+header > h1{
+    line-height: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #545454;
+    font-size: 100%;
+    margin: 2rem 0;
+    vertical-align: auto;
+}
+
+
+main img {
+    display: block;
+    width: 100%;
+}
+
+header, main, footer{
+    max-width: 80rem;
+    padding: 1.0rem;
+    margin: 2rem auto 1rem;
+}
+
+main div:first-child {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.0rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+main h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+main img {
+    box-shadow: 0 0 1.0rem #5b6061;
+}
+
+main div:last-child {
+    margin-top: 10rem;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+/* Animation */
+
+h1{
+    animation: textep 3s linear infinite alternate;
+
+}
+h1:hover{
+    animation: paused;
+
+}
+
+
+
+
+@keyframes textep {
+    from{
+        transform: translate(10rem);
+        
+    }
+    to{
+        transform: translate(-10rem);
+        
+    }
+    
+}

@@ -1,0 +1,86 @@
+/*basic styles for black background and crosshair cursor*/
+body{
+	background: #000;
+	margin: 0;
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+h1{
+	pointer-events: none;
+}
+
+#message{
+max-width: 60rem;
+font-size: 1.5rem;
+color: white;
+text-align: center;
+margin: 0 auto;
+position: relative;
+
+}
+canvas{
+	cursor: crosshair;
+	display: block;
+}
+
+
+
+span{
+    animation: texte 0.5s linear infinite alternate;
+    vertical-align: -.5rem;
+
+}
+
+span:hover{
+    animation: paused;
+}
+
+@keyframes texte {
+    from{
+        opacity: 0;
+        transform: scale(2.0);
+        
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        color: #fff;
+    }
+    
+}
+
+#gauche {
+    margin-right: 1.5rem;
+    color: red;
+}
+
+#droite {
+    margin-left: 1.5rem;
+    color: red;
+}
+
+
+.birth{
+    animation: texte 1.5s linear infinite alternate;
+    font-size: 1.8rem;
+}
+
+.birth:hover{
+    animation: paused;
+}
+
+@keyframes texte {
+    from{
+        opacity: 0;
+        transform: scale(2.0);
+        
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        color: #fff;
+    }
+    
+}
+

@@ -433,3 +433,26 @@ function touchHandler(event){
     first.target.dispatchEvent(simulatedEvent);
     event.preventDefault();
 }
+
+/* cube */
+
+const btn = document.querySelector('.wrap');
+const cube = document.querySelector('.cube');
+const img = document.querySelectorAll('.manga')
+
+console.log(cube)
+btn.addEventListener('click', () => {
+	if (cube.classList == 'cube') {
+		cube.classList.add('cube-stop');
+		for(let i = 0; i < cube.children.length; i++) {
+			cube.children[i].style.opacity = 1;
+		}
+		
+	}else if (cube.classList == 'cube cube-stop'){
+		cube.classList = 'cube';
+		for(let i = 0; i < cube.children.length; i++) {
+			cube.children[i].style.opacity = 0.8;
+		}
+	}
+	
+ });

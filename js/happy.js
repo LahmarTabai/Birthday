@@ -434,13 +434,14 @@ function touchHandler(event){
     event.preventDefault();
 }
 
+
 /* cube */
 
 const btn = document.querySelector('.wrap');
 const cube = document.querySelector('.cube');
 const img = document.querySelectorAll('.manga')
 
-console.log(cube)
+console.log(img)
 btn.addEventListener('click', () => {
 	if (cube.classList == 'cube') {
 		cube.classList.add('cube-stop');
@@ -456,3 +457,32 @@ btn.addEventListener('click', () => {
 	}
 	
  });
+
+
+ /* touchHandler  */
+
+ 	for(let i = 0; i < img.length; i++) {
+		img[i].addEventListener('touchend', () => {
+			if (cube.classList == 'cube') {
+				btn.addEventListener('touchend', () => {
+				cube.classList.add('cube-stop');
+				for(let j = 0; j < cube.children.length; j++) {
+					cube.children[j].style.opacity = 1;
+				}
+				});	
+			}else if (cube.classList == 'cube cube-stop'){
+				btn.addEventListener('touchend', () => {
+				cube.classList = 'cube';
+				for(let k = 0; k < cube.children.length; k++) {
+					cube.children[k].style.opacity = 0.8;
+				}
+				})
+			}
+		})				
+	}
+
+
+
+
+
+

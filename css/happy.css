@@ -89,7 +89,8 @@ span:hover{
     /* contexte 3d */
     perspective: 80rem;
     /* position du cube */
-    perspective-origin: 50% 10.0rem;
+    perspective-origin: 50% 20.0rem;
+    margin-bottom: 50rem;
 }
 .cube{
     position: relative;
@@ -109,6 +110,12 @@ span:hover{
     opacity:0.8;
     box-shadow: 0 0 1rem #222;
 }
+
+.cube div:hover, .cube div img:hover, .cube:hover {
+    animation-play-state: paused;
+    opacity: 1;
+}
+
 div img{
     display: block;
     width: 100%;

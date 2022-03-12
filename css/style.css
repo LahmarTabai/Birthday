@@ -1,6 +1,6 @@
 /* thème */
 html {
-background: #222 /*url(../asset/snow.jpg)no-repeat fixed center center /cover*/;
+background: #000 /*url(../asset/snow.jpg)no-repeat fixed center center /cover*/;
     overflow-x: hidden;
 }
 header{
@@ -44,7 +44,7 @@ main h2 {
     color: #fff;
 }
 
-main span, footer {
+main span, footer, footer p {
     color: #fff;
 }
 

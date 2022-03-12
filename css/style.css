@@ -12,7 +12,7 @@ header > h1{
     line-height: 5rem;
     text-align: center;
     text-transform: uppercase;
-    color: #545454;
+    color: #fff;
     font-size: 100%;
     margin: 2rem 0;
     vertical-align: auto;
@@ -41,6 +41,11 @@ main div:first-child {
 main h2 {
     font-size: 3rem;
     font-weight: bolder;
+    color: #fff;
+}
+
+main span, footer {
+    color: #fff;
 }
 
 main img {
@@ -121,8 +126,6 @@ aside {
 }
 
 #ground {
-    width: 900px;
-    height: 900px;
     position: absolute;
     top: 100%;
     left: 50%;

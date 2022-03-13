@@ -163,4 +163,21 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         return false;
     };
+
+    /* Audio */
+
+    //     let audioPlaying = true, backgroundAudio, navigateur;
+    //     navigateur = navigator.userAgent.toLowerCase(),
+    // //Ajout de la balise <audio>
+    // $('<audio autoplay loop=""><source loop="" src="./asset/Happy.mp3" type="audio/mpeg"></audio>').prependTo('body'),
+    //     if (!browser.indexOf('firefox') > -1) {
+    //     //Il ne s'agit pas de Firefox, on ajoute la balise <embed>
+    //     $('<embed id="background-audio" src="./asset/Happy.mp3" autostart="1"></embed>').prependTo('body'),
+    //     backgroundAudio = setInterval(function() {
+    //         //Fonction qui supprime la balise <embed> à la fin
+    //         $("#background-audio").remove(),
+    //         $('<embed id="background-audio" src="./asset/Happy.mp3"></embed>').prependTo('body'),
+    //     }, 120000), // Durée du son (ici 2 minutes en millisecondes)
+    // }
+
 });

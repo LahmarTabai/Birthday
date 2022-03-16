@@ -154,3 +154,9 @@ aside {
 audio {
     width: 10rem;
 }
+
+#fram {
+    position: relative;
+    z-index: -300;
+    display: none;
+}

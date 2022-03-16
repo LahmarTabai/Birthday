@@ -256,12 +256,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // });
 
 
-    const masou = () => {
+    // const masou = () => {
 
-        let mus = document.getElementById('Music');
+    //     let mus = document.getElementById('Music');
 
-        mus.play();
-        setInterval(masou, 100);
-    };
-    masou();
+    //     mus.play();
+    //     setInterval(masou, 100);
+    // };
+    // masou();
+
 });

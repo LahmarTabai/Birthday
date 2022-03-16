@@ -163,5 +163,6 @@ audio {
     display: block;
     width: 40rem;
     height: 60rem;
+    margin: 0 auto;
 }
 

@@ -156,13 +156,12 @@ audio {
 }
 
 .road {
-    width: 40rem;
-    height: 40rem;
+    display: block;
+    margin: 0 auto;
 }
-
-.road img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.tadd {
+    display: block;
+    width: 40rem;
+    height: 60rem;
 }
 

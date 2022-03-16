@@ -59,7 +59,13 @@
         </div>
     </aside>
   
-        <audio id="Music" autoplay allow="autoplay" loop="">
+        <!-- <audio id="Music" autoplay allow="autoplay" loop="">
+            <source allow="autoplay" loop="" src="./asset/Happy.mp3" type="audio/mp3">
+        </audio> -->
+        <audio id="audio1" src="./asset/Happy.mp3" preload="auto">
+
+        </audio>
+        <audio id="Music">
             <source allow="autoplay" loop="" src="./asset/Happy.mp3" type="audio/mp3">
         </audio>
        
@@ -67,19 +73,19 @@
     </main>
 
     <footer>
-        <button type="button" class="toggle" aria-label="voir le details">
+        <button type="button" id="play" class="toggle" aria-label="voir le details">
             <img src="./favicon_io/favicon-32x32.png" alt="Love">
         </button>
        
     </footer>
 
-    <div class="road">
+    <!-- <div class="road">
         <img  class="tadd" src="./asset/Noir.PNG" alt="">
         <img  class="tadd" src="./asset/Noir.PNG" alt="">
         <img  class="tadd" src="./asset/Noir.PNG" alt="">
         <img  class="tadd" src="./asset/Noir.PNG" alt="">
         <iframe id="fram" src="https://www.youtube.com/watch?v=l_Q-SySBYfk" allow="autoplay" ></iframe>
-    </div>
+    </div> -->
 
     <script src="./js/app.js"></script>
     

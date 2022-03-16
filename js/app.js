@@ -265,4 +265,26 @@ document.addEventListener("DOMContentLoaded", () => {
     // };
     // masou();
 
+
+    // var audio = new Audio("./asset/Happy.mp3");
+
+    // audio.oncanplaythrough = function(){
+    // audio.play();
+    // }
+
+    // audio.loop = true;
+
+    // audio.onended = function(){
+    // audio.play();
+    // }
+
+    var playBtn = document.getElementById('play');
+
+    var soundSelected = document.getElementById("audio1");
+
+    var playSound = function () {
+        soundSelected.play();
+    };
+
+    playBtn.addEventListener('click', playSound, false);
 });

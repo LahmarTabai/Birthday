@@ -155,3 +155,11 @@ audio {
     width: 10rem;
 }
 
+#fram {
+    width: 40rem;
+    height: 40rem;
+    position: relative;
+    transform: translateX(-120%);
+    overflow: hidden;
+}
+

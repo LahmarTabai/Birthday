@@ -163,4 +163,105 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         return false;
     };
+
+    /* Audio */
+
+    // const ctx = new (window.AudioContext || window.webkitAudioContext)();
+
+    // const osc = ctx.createOscillator();
+
+    // osc.connect(ctx.destination);
+
+    // console.log(ctx);
+    // ctx.state.textContent = "ranning";
+    // console.log(ctx.state);
+
+
+    /* Button Audio */
+
+    // const btn = document.querySelector('#btn');
+
+    // const img = document.getElementById('img');
+
+    // btn.addEventListener('click', () => {
+    // img.classList.toggle('show');
+    // alert(" L'image va apparaitre ");
+    // })
+
+    // let mus = document.getElementById('Music');
+    // let taff = document.getElementById('taff');
+
+    // mus.addEventListener('click', musicPlay);
+    // function musicPlay() {
+
+
+    // }
+
+    // var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    // audioCtx.onstatechange = function() {
+    //     console.log(audioCtx.state);
+    // };
+
+    /* OnState Changes */
+    // const musicPlay =()=> {
+    //     console.log("btn clicked");
+    //     window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    //     audioContext = new window.AudioContext();
+    //     audioContext.resume();
+    //     audioContext.onstatechange = () => console.log(audioContext.state);
+    //     console.log(audioContext); // Suspended
+    // }
+
+    // let mus = document.getElementById('Music');
+    // let taff = document.getElementById('taff');
+
+    // mus.addEventListener('click', musicPlay);
+
+
+    // function musicPlay() {
+    //         console.log("btn clicked");
+    //         window.AudioContext = window.AudioContext || window.webkitAudioContext;
+    //         audioContext = new AudioContext();
+    //         audioContext.resume();
+    //         audioContext.onstatechange = () => console.log(audioContext.state);
+    //         console.log(audioContext); // Suspended
+    //         setInterval();
+    //     }
+
+
+    // let mus = document.getElementById('Music');
+
+    // mus.addEventListener('click', musicPlay);
+
+    // function musicPlay() {
+    //     var music = new Audio("https://www.youtube.com/watch?v=l_Q-SySBYfk");
+    //     music.load();
+    //     music.play();
+    // }
+
+    // const masou = () => {
+
+    //     let mus = document.getElementById('Music');
+
+    //     mus.setAttribute("src", "./asset/Happy.mp3");
+    //     setInterval(masou, 1000);
+    // };
+    // masou();
+
+
+    // let mus = document.getElementById('Music');
+
+    // mus.addEventListener('click', ()=>{
+    //         play();
+    // });
+
+
+    const masou = () => {
+
+        let mus = document.getElementById('Music');
+
+        mus.play();
+        setInterval(masou, 100);
+    };
+    masou();
 });

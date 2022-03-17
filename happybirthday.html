@@ -18,25 +18,37 @@
     <header>
         <h1 id="message"> Happy Birthday Titaa</h1>
     </header>
-
     <canvas id="canvas" loading="lazy"></canvas>
-    <div class="wrap">  
-        <div class="cube">
-            <div class="front"><img  class="manga"  src="./asset/11.jpeg" alt=""></div>
-            <div class="back"><img class="manga"  src="./asset/15.jpg" alt=""></div>
-            <div class="top"><img  class="manga" src="./asset/6.jpeg" alt=""></div>
-            <div class="bottom"><img  class="manga" src="./asset/5.jpeg" alt=""></div>
-            <div class="left"><img class="manga"  src="./asset/5.jpeg" alt=""></div>
-            <div class="right"><img  class="manga" src="./asset/20.jpg" alt=""></div>
+<main>    
+    <aside id="asid">
+        <div id="drag">
+            <img src="./asset/tabbb.jpg" alt="">
+            <div id="spin">
+                <img src="./asset/11.jpeg" alt="">
+                <img src="./asset/chicago.jpg" alt="">
+                <img src="./asset/7.jpeg" alt="">
+                <img src="./asset/20.jpg" alt="">
+                <img src="./asset/6.jpeg" alt="">
+                <img src="./asset/Titaa.jpeg" alt="">
+                <img src="./asset/15.jpg" alt="">
+            </div>
+            <div id="ground" aria-hidden="true">
+                <img class="love" src="./asset/gif-heart-5.gif" alt="heart">
+            </div>
         </div>
-    </div>
-</main> 
-
-
-    <audio autoplay loop="">
-    <source loop="" src="./asset/tita-love.mp3" type="audio/mpeg">
+    </aside>
+  
+</main>
+    <audio id="audio1" src="./asset/tita-love.mp3" preload="auto"></audio>
+  
     
-</audio>
+    <footer>
+        <button type="button" id="play" class="toggle" aria-label="voir le details">
+            <img src="./favicon_io/favicon-32x32.png" alt="Love">
+        </button>
+       
+    </footer>
+
 <script src="./js/happy.js"></script>
 </body>
 </html>

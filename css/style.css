@@ -88,83 +88,123 @@ h1:hover{
     
 }
 
-/* cube ma7loul */
 
-aside {
-    overflow: hidden;
-    display: flex;
-    background: transparent;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    height: 60rem;
+
+/* Cube */
+
+.wrap{
+    /* contexte 3d */
+    perspective: 80rem;
+    /* position du cube */
+    perspective-origin: 50% 20.0rem;
+    margin-bottom: 50rem;
 }
-
-#drag, #spin {
+.cube{
     position: relative;
-    display: flex;
-    margin: auto;
+    z-index: 1;
+    width: 20rem;
     transform-style: preserve-3d;
-    transform: rotateX(-10deg);
+    margin: 10rem auto;
 }
 
-#drag img {
-    transform-style: preserve-3d;
+.cube div{
     position: absolute;
+    z-index: 2;
     top: 0;
     left: 0;
+    width: 20rem;
+    height: 20rem;
+    opacity:0.8;
+    box-shadow: 0 0 1rem #222;
+}
+
+.cube div:hover, .cube img:hover, .cube:hover {
+    animation-play-state: paused;
+    opacity: 1;
+    cursor: pointer;
+}
+
+div img{
+    display: block;
     width: 100%;
     height: 100%;
-    line-height: 200px;
-    text-align: center;
-    box-shadow: 0 0 8px #fff;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+/* mettre en place les face */
+.back{
+    transform: translateZ(-10rem) rotateY(180deg)scale(1);
+    transition-duration: 0.5s;
 }
 
-#drag img:hover {
-    box-shadow: 0 0 1.5rem #fffd;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);  
+.right{
+    transform: rotateY(-270deg) translateX(10rem)scale(1);
+    transform-origin: top right;
+    transition-duration: 0.5s;
 }
 
-#ground {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(90deg);
+.left{
+    transform: rotateY(270deg) translateX(-10rem)scale(1);
+    transform-origin: center left;
+    transition-duration: 0.5s;
 }
 
-@keyframes spin {
-    from {
+.top{
+    transform: rotateX(-90deg) translateY(-10rem);
+    transform-origin: top center;
+    transition-duration: 0.5s;
+}
+
+.bottom{
+    
+    transform: rotateX(90deg) translateY(10rem);
+    transform-origin: bottom center;
+}
+.front{
+    transform: translateZ(10rem)scale(1);
+    transition-duration: 0.5s;
+}
+
+
+
+
+/* animation */
+.cube{
+    animation: spin 10s infinite linear;
+}
+
+@keyframes spin{
+    from{
         transform: rotateY(0deg);
     }
-    to {
+    to{
         transform: rotateY(360deg);
     }
 }
 
+.cube-stop{
+    animation-play-state: paused;
+    opacity: 1;
+}
 
-@keyframes spinRevert {
-    from {
-        transform: rotateY(360deg);
+@media screen and (min-width: 600px) {
+    .cube div {
+        width: 35rem;
+        height: 35rem;
     }
-    to {
-        transform: rotateY(0deg);
+
+    .front{
+        transform: translateZ(25rem)scale(1);
+        transition-duration: 0.5s;
+    }
+
+    .top{
+        transform: rotateX(-90deg) translateY(-25rem);
+        transform-origin: top center;
+        transition-duration: 0.5s;
+    }
+    
+    .bottom{
+        
+        transform: rotateX(90deg) translateY(25rem);
+        transform-origin: bottom center;
     }
 }
-
-audio {
-    width: 10rem;
-}
-
-
-/* Image + IFrame */
-.road {
-    display: block;
-    margin: 0 auto;
-}
-.tadd {
-    display: block;
-    width: 40rem;
-    height: 60rem;
-    margin: 0 auto;
-}
-

@@ -84,122 +84,80 @@ span:hover{
     
 }
 
+/* cube ma7loul */
 
-.wrap{
-    /* contexte 3d */
-    perspective: 80rem;
-    /* position du cube */
-    perspective-origin: 50% 20.0rem;
-    margin-bottom: 50rem;
-}
-.cube{
-    position: relative;
-    z-index: 1;
-    width: 20rem;
+aside {
+    overflow: hidden;
+    display: flex;
+    background: transparent;
+    perspective: 1000px;
     transform-style: preserve-3d;
-    margin: 10rem auto;
+    height: 60rem;
 }
 
-.cube div{
+#drag, #spin {
+    position: relative;
+    display: flex;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+
+#drag img {
+    transform-style: preserve-3d;
     position: absolute;
-    z-index: 2;
     top: 0;
     left: 0;
-    width: 20rem;
-    height: 20rem;
-    opacity:0.8;
-    box-shadow: 0 0 1rem #222;
-}
-
-.cube div:hover, .cube div img:hover, .cube:hover {
-    animation-play-state: paused;
-    opacity: 1;
-}
-
-div img{
-    display: block;
     width: 100%;
     height: 100%;
-}
-/* mettre en place les face */
-.back{
-    transform: translateZ(-10rem) rotateY(180deg)scale(1);
-    transition-duration: 0.5s;
-}
-
-.right{
-    transform: rotateY(-270deg) translateX(10rem)scale(1);
-    transform-origin: top right;
-    transition-duration: 0.5s;
+    line-height: 200px;
+    text-align: center;
+    box-shadow: 0 0 8px #ffffff;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
 }
 
-.left{
-    transform: rotateY(270deg) translateX(-10rem)scale(1);
-    transform-origin: center left;
-    transition-duration: 0.5s;
+#drag img:hover {
+    box-shadow: 0 0 1.5rem #ffffff;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);  
 }
 
-.top{
-    transform: rotateX(-90deg) translateY(-10rem);
-    transform-origin: top center;
-    transition-duration: 0.5s;
+#ground {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
 }
 
-.bottom{
-    
-    transform: rotateX(90deg) translateY(10rem);
-    transform-origin: bottom center;
-}
-.front{
-    transform: translateZ(10rem)scale(1);
-    transition-duration: 0.5s;
+#ground img:hover {
+    box-shadow: none;
+} 
+
+#ground img {
+    box-shadow: none;
 }
 
-
-
-
-/* animation */
-.cube{
-    animation: spin 10s infinite linear;
-}
-
-@keyframes spin{
-    from{
+@keyframes spin {
+    from {
         transform: rotateY(0deg);
     }
-    to{
+    to {
         transform: rotateY(360deg);
     }
 }
 
-.cube-stop{
-    animation-play-state: paused;
-    opacity: 1;
-}
 
-@media screen and (min-width: 600px) {
-    .cube div {
-        width: 35rem;
-        height: 35rem;
+@keyframes spinRevert {
+    from {
+        transform: rotateY(360deg);
     }
-
-    .front{
-        transform: translateZ(25rem)scale(1);
-        transition-duration: 0.5s;
-    }
-
-    .top{
-        transform: rotateX(-90deg) translateY(-25rem);
-        transform-origin: top center;
-        transition-duration: 0.5s;
-    }
-    
-    .bottom{
-        
-        transform: rotateX(90deg) translateY(25rem);
-        transform-origin: bottom center;
+    to {
+        transform: rotateY(0deg);
     }
 }
 
 
+footer {
+    text-align: center;
+    margin-top: 4rem;
+}
 

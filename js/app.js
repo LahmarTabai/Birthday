@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const countdown = () => {
-        const countDate = new Date("apr 27, 2022 00:00:00").getTime(); // la date du mem jour 
+        const countDate = new Date("mars 19, 2022 00:10:00").getTime(); // la date du mem jour 
+
+        //const countDate = new Date("apr 27, 2022 00:00:00").getTime();
 
 
         const now = new Date().getTime();
@@ -31,7 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const reload = () => {
 
-        const countDate = new Date("apr 27, 2022 00:00:00").getTime(); // la date du mem jour 
+        const countDate = new Date("mars 19, 2022 00:10:00").getTime(); // la date du mem jour 
+
+        // const countDate = new Date("apr 27, 2022 00:00:00").getTime();
 
 
         const now = new Date().getTime();
